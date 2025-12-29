@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chatbot - CODSOFT Task 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="chatbot-wrapper">
+            <!-- Header -->
+            <div class="header">
+                <div class="header-content">
+                    <h1>AI Chatbot</h1>
+                    <p>Rule-Based Conversational AI</p>
+                </div>
+                <div class="status-indicator">
+                    <span class="status-dot online"></span>
+                    <span class="status-text">Online</span>
+                </div>
+            </div>
+
+            <!-- Chat Messages Display -->
+            <div class="chat-messages" id="chatMessages">
+                <div class="message bot-message">
+                    <div class="message-content">
+                        <p>Hello! 👋 I'm an AI chatbot. How can I help you today?</p>
+                    </div>
+                    <span class="message-time">Just now</span>
+                </div>
+            </div>
+
+            <!-- Input Area -->
+            <div class="input-area">
+                <form id="chatForm" class="chat-form">
+                    <div class="input-wrapper">
+                        <input 
+                            type="text" 
+                            id="userInput" 
+                            class="message-input" 
+                            placeholder="Type your message here..." 
+                            autocomplete="off"
+                        >
+                        <button type="submit" class="send-button" title="Send message">
+                            <span class="send-icon">➤</span>
+                        </button>
+                    </div>
+                    <div class="suggestions">
+                        <button type="button" class="suggestion-btn" onclick="sendSuggestion('Hello')">Hello</button>
+                        <button type="button" class="suggestion-btn" onclick="sendSuggestion('How are you')">How are you?</button>
+                        <button type="button" class="suggestion-btn" onclick="sendSuggestion('Tell me a joke')">Joke</button>
+                        <button type="button" class="suggestion-btn" onclick="sendSuggestion('What is AI')">What is AI?</button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Footer with Info -->
+            <div class="footer">
+                <p>CODSOFT AI Internship | Task 1: Rule-Based Chatbot</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
